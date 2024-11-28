@@ -34,6 +34,78 @@
           </nav>
     </header>
 
+    <main>
+        <div class="container mt-5">
+              <h4 class="h4">Catalogo Libri</h4>
+            
+            <form class="row g-3">
+                <!--Name author-->
+                <div class="col-md-6 mt-5">
+                    <h5 for="Nameauthor" class="form-label">Nome Autore</h5>
+                    <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore" minlength="3">
+                </div>
+
+                <!--surname author-->
+                <div class="col-md-6 mt-5">
+                    <h5 for="surnameauthor" class="form-label">Cognome Autore</h5>
+                    <input type="text" class="form-control" placeholder="Inserisci il cognome dell'autore" minlength="3">
+                </div>
+
+                <!--Title book-->
+                <div class="col-12">
+                <h5 for="inputAddress" class="form-label">Titolo</h5>
+                <input type="text" class="form-control form-label" id="inputAddress" placeholder="inserisci il titolo del libro">
+                <span class="text-body-secondary">Titolo versione italiana</span>
+                </div>
+
+                <!--Specifiche Libro-->
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Genere</label>
+                    <select id="inputState" class="form-select" required>
+                      <option selected="type" disabled>Scegli il genere</option>
+                      <option>Criminale</option>
+                      <option>Fantascienza</option>
+                      <option>Avventura</option>
+                    </select>
+                  </div>
+
+                  <!--only nymber whit pattern="\d+" -->
+                <div class="col-md-4">
+                    <label for="inputCity" class="form-label">Anno di Pubblicazione</label>
+                    <input type="text" class="form-control" placeholder="Inserisci l'anno" minlength="4" pattern="\d+" required/>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="inputZip" class="form-label">ISBN#</label>
+                    <input type="text" class="form-control" placeholder="Inserisci il codice ISBN#" required />
+                  </div>
+                
+                <hr class="mt-5">
+
+                <!--Note-->
+                <div>
+                    <h5 for="floatingTextarea2">Note</h5>
+                    <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" style="height: 100px"></textarea>
+                </div>
+
+                
+                <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                    Check me out
+                    </label>
+                </div>
+                </div>
+                <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </form>
+        </div>
+        
+    </main>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
