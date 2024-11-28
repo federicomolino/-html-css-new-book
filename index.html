@@ -41,20 +41,20 @@
             <form class="row g-3">
                 <!--Name author-->
                 <div class="col-md-6 mt-5">
-                    <h5 for="Nameauthor" class="form-label">Nome Autore</h5>
-                    <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore" minlength="3">
+                    <h5 class="form-label">Nome Autore</h5>
+                    <input name="nameauthor" class="form-control" placeholder="Inserisci il nome dell'autore" minlength="3">
                 </div>
 
                 <!--surname author-->
                 <div class="col-md-6 mt-5">
-                    <h5 for="surnameauthor" class="form-label">Cognome Autore</h5>
-                    <input type="text" class="form-control" placeholder="Inserisci il cognome dell'autore" minlength="3">
+                    <h5 class="form-label">Cognome Autore</h5>
+                    <input name="surnameauthor" class="form-control" placeholder="Inserisci il cognome dell'autore" minlength="3">
                 </div>
 
                 <!--Title book-->
                 <div class="col-12">
-                <h5 for="inputAddress" class="form-label">Titolo</h5>
-                <input type="text" class="form-control form-label" id="inputAddress" placeholder="inserisci il titolo del libro">
+                <h5 class="form-label">Titolo</h5>
+                <input name="titlebook" class="form-control form-label" id="inputAddress" placeholder="inserisci il titolo del libro">
                 <span class="text-body-secondary">Titolo versione italiana</span>
                 </div>
 
@@ -62,29 +62,29 @@
                 <div class="col-md-4">
                     <label for="inputState" class="form-label">Genere</label>
                     <select id="inputState" class="form-select" required>
-                      <option selected="type" disabled>Scegli il genere</option>
-                      <option>Criminale</option>
-                      <option>Fantascienza</option>
-                      <option>Avventura</option>
+                      <option value="" selected disabled>Scegli il genere</option>
+                      <option value="crime">Criminale</option>
+                      <option value="fantasy">Fantascienza</option>
+                      <option value="adventure">Avventura</option>
                     </select>
                   </div>
 
                   <!--only nymber whit pattern="\d+" -->
                 <div class="col-md-4">
-                    <label for="inputCity" class="form-label">Anno di Pubblicazione</label>
-                    <input type="text" class="form-control" placeholder="Inserisci l'anno" minlength="4" pattern="\d+" required/>
+                    <label class="form-label">Anno di Pubblicazione</label>
+                    <input name="age" class="form-control" placeholder="Inserisci l'anno" minlength="4" pattern="\d+" required>
                   </div>
 
                   <div class="col-md-4">
-                    <label for="inputZip" class="form-label">ISBN#</label>
-                    <input type="text" class="form-control" placeholder="Inserisci il codice ISBN#" required />
+                    <label class="form-label">ISBN#</label>
+                    <input name="ISBN" class="form-control" placeholder="Inserisci il codice ISBN#" required>
                   </div>
                 
                 <hr class="mt-5">
 
                 <!--Note-->
                 <div>
-                    <h5 for="floatingTextarea2">Note</h5>
+                    <h5>Note</h5>
                     <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" style="height: 100px"></textarea>
                 </div>
 
@@ -97,7 +97,7 @@
 
                 </div>
                 <div class="col-12">
-                <button type="submit" action="" class="btn btn-primary btn-lg">Aggiungi Libro</button>
+                <button name="submit" class="btn btn-primary btn-lg">Aggiungi Libro</button>
                 </div>
             </form>
         </div>
