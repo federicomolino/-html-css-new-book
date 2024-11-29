@@ -34,22 +34,26 @@
           </nav>
     </header>
 
-    <main>
-        <div class="container mt-5">
-              <h4 class="h4">Catalogo Libri</h4>
-            
+    <main>  
+        <div class="container mt-2">
+
+            <div class="container mt-5">
+                <h2 class="h2">Nuovo Libro</h2>
+
             <form class="row g-3">
+            <div class="d-flex justify-content-between gap-3">
                 <!--Name author-->
-                <div class="col-md-6 mt-5">
+                <div class="col-6 mt-5">
                     <h5 class="form-label">Nome Autore</h5>
                     <input name="nameauthor" class="form-control" placeholder="Inserisci il nome dell'autore" minlength="3">
                 </div>
 
                 <!--surname author-->
-                <div class="col-md-6 mt-5">
+                <div class="col-6 mt-5">
                     <h5 class="form-label">Cognome Autore</h5>
                     <input name="surnameauthor" class="form-control" placeholder="Inserisci il cognome dell'autore" minlength="3">
                 </div>
+            </div>
 
                 <!--Title book-->
                 <div class="col-12">
@@ -100,6 +104,7 @@
                 <button name="submit" class="btn btn-primary btn-lg">Aggiungi Libro</button>
                 </div>
             </form>
+        </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
